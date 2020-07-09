@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="flex-item">
+    <navigator url="/pages/about/about" hover-class="change-opacity">
+      <image class="about" src="/resource/images/jianjie.png"></image>
+    </navigator>
+  </view>
+  <view class="flex-item">
+    <navigator url="/pages/guideIndex/guideIndex" hover-class="change-opacity">
+      <image class="tour" src="/resource/images/youlan.png"></image>
+    </navigator>  
+  </view>
+  <view class="flex-item">
+    <image class="logo" src="/resource/images/logo1.png"></image>
+  </view>
+</view>
+  <view class="footer">
+    <p class="footer-copyright">B15041333 谦博©版权所有   </p>
+    <span class="footer-email">Email:xiaoqian2016@foxmail.com</span>
+  </view>

@@ -1,0 +1,57 @@
+.container{
+  background-image:url(https://cloud-minapp-26690.cloud.ifanrusercontent.com/1hJF31ZyLfBFzl3D.jpg);
+  background-repeat: no-repeat;
+  background-size: 750rpx 1334rpx; 
+  width: 750rpx;
+  height:1334rpx;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+.flex-item{
+  width: 100%;
+  text-align: center;
+}
+
+.about,.tour{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.about{
+  margin-top: 100rpx;
+}
+
+.tour{
+  margin-top: 50rpx;
+}
+
+.logo{
+  margin-top:20rpx;
+  width: 400rpx;
+  height:188rpx;
+}
+
+.change-opacity{
+  opacity:0.8;
+}
+
+.footer{
+  width:750rpx;
+  height:150rpx;
+  background-color: #000;
+  padding-top:7rpx;
+}
+
+.footer-copyright{
+  color:#fff;
+  font-size:25rpx;
+  padding-left:200rpx;
+}
+
+.footer-email{
+  color:#fff;
+  font-size:25rpx;
+  padding-left:165rpx;
+}

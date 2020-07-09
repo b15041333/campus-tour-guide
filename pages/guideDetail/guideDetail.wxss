@@ -1,0 +1,70 @@
+
+.slide{
+  width: 750rpx;
+  height: 500rpx; 
+}
+
+.slide-image{
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.intro-title {
+  position: relative;
+}
+
+.intro-info{
+  background-color: rgba(248,248,248,.3);
+}
+
+.padding-leftRight {
+  padding: 0 40rpx;
+}
+
+.intro-title-text {
+  padding: 54rpx 0;
+  line-height: 60rpx;
+  font-size: 70rpx;
+  color:#213F99;
+}
+
+.intro-title-logo {
+  position: absolute;
+  right: 0;
+  top: 35rpx;
+  width: 90rpx;
+  height: 90rpx;
+  /* border-radius: 50%; */
+}
+
+.intro-main {
+  padding: 40rpx 0;
+  line-height: 48rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+  color: #464645;
+  text-align: justify;
+}
+
+.comment-title{
+  font-size:50rpx;
+  color:#213F99;
+}
+
+.comment-main {
+  margin-top:30rpx;
+  line-height:42rpx;
+  font-size:30rpx;
+  font-weight:300;
+  color:#464645;
+  text-align:justify;
+}
+
+.intro-submitComment{
+  margin-top:30rpx;
+  padding:10rpx;
+  width:100%;
+  height:250rpx;
+  border:1px solid #213F99;
+  border-radius: 5px;
+}

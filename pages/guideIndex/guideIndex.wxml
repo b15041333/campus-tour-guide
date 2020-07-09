@@ -1,0 +1,56 @@
+<view class="guide">
+  <view class="top-guide">
+    <view class="top-guide-items">
+      <scroll-view scroll-x="true">
+        <block wx:for="{{ categoryData }}" wx:key="true">
+          <view class="top-list-item" data-cate="{{item}}" bindtap="categoryChange" data-category="{{item}}">
+            <view class="top-list-item-title {{ activeCategory == item ? 'active-top-border' : ''}}">{{ item }}</view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+
+  <map
+    class="{{ isSpread ? 'map-has-merchant-list' : ''}}"
+    longitude="{{ coreLongitude }}"
+    latitude="{{ coreLatitude }}"
+    scale="{{ scale }}"
+    show-location
+    markers="{{ markers }}"
+    bindmarkertap = "markerTap"
+    >
+  </map>
+  
+  <view class="guide-merchants">
+    <view
+      class="guide-merchants-record"
+      bindtap="switchMerchantsItems"
+    >
+      共有{{ itemsList.length }}个{{ activeCategory }}
+      <view class="guide-merchants-toggle iconfont {{ isSpread ? 'icon-spread-down':'icon-spread-up' }}"></view>
+    </view>
+    <view class="guide-merchants-items" hidden="{{ !isSpread }}">
+       <scroll-view
+        scroll-x="{{ true }}"
+        scroll-left="{{ scrollLeft }}"
+        scroll-with-animation="{{ true }}"
+        >
+        <block
+          class="guide-merchants-item"
+          wx:for="{{ itemsList }}" wx:key="true"
+        >
+        <!-- block与view的区别是它不输出自身 -->
+          <navigator id="{{ item.id }}" class="list-item"  url="../guideDetail/guideDetail?id={{ item.id }}">
+          <!-- 此处url作为地点详情页onLoad方法的参数option -->
+            <view
+              class="list-item-img {{ index == activeMerchantIndex ? 'active-merchant-border' : ''}}"
+              style="background-image: url({{ item.logo }})"
+></view>
+              <view class="list-item-title">{{ item.title }}</view>
+          </navigator>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>

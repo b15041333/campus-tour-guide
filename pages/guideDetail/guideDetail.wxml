@@ -1,0 +1,31 @@
+<view class="intro">
+    <swiper class="slide" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="true">
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+    </swiper>
+    <view class="intro-info padding-leftRight">
+        <view class="intro-title">
+          <view class="intro-title-text">{{title}}</view>
+          <image src="../../resource/images/gotomap.png" class="intro-title-logo" bindtap="openLocation"></image>
+        </view>
+        <view class="intro-main">
+          {{description}}
+        </view>
+        <view class="comment-title">
+          评论区
+        </view>
+        <view class="comment-main" wx:for="{{comment}}" wx:key="true">
+          同学{{index+1}}：“
+          {{item}}”
+        </view>
+        <view class="intro-submitComment">
+          <form bindsubmit="bindFormSubmit">
+            <textarea placeholder="我有话要说..." name="textarea"></textarea>
+            <button form-type="submit">提交</button>
+          </form>
+        </view>
+    </view>
+</view>
+

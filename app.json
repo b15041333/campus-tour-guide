@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/guideIndex/guideIndex",
+    "pages/guideDetail/guideDetail",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#213F99",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "南京邮电大学校园导览",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

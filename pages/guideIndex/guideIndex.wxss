@@ -1,0 +1,138 @@
+/* 顶部地图分类导航 */
+
+.top-guide {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  min-width: 100%;
+  background:#213F99;
+  color: #ffffff;
+}
+
+.top-guide-items{
+  position: relative;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  padding: 0rpx 20rpx;
+  width: 100vw;
+  line-height: 100rpx;
+}
+
+.top-list-item{
+  display: inline-block;
+}
+
+.top-list-item-title {
+  display: inline-block;
+  margin-right: 40rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  font-weight: 500;
+  /* font-family: 'iconfont'; */
+  line-height: 70rpx;
+  height: 70rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 使用省略号来显示被修剪的文本，放置类别过多的情况 */
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+  font-weight: 200;
+}
+
+.active-top-border {
+  border-bottom: 4rpx solid #ffffff;
+}
+
+map {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 100rpx;
+  left: 0;
+  right: 0;
+  bottom: 69rpx;
+}
+
+.map-has-merchant-list {
+  bottom: 399rpx;
+}
+
+.guide-merchants {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  background: #fff;
+}
+
+.guide-merchants.merchants-items-hidden {
+  bottom: 0;
+}
+
+.guide-merchants-record {
+  letter-spacing: 10rpx;
+  border-bottom: 1rpx solid #eee;
+  width: 100vw;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 24rpx;
+  color: #213F99;
+}
+
+.guide-merchants-toggle {
+  font-size: 20rpx;
+  display: inline-block;
+}
+
+.guide-merchants-items {
+  position: relative;
+  overflow-x: scroll;
+  /* 若长度溢出，左右以滚动条显示 */
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  padding: 20rpx 20rpx;
+  width: 100vw;
+}
+
+.list-item,
+.list-item-img {
+  display: inline-block;
+}
+
+.list-item {
+  margin-right: 20rpx;
+}
+
+.list-item-title {
+  display: block;
+  width: 280rpx;
+  box-sizing: border-box;
+  /* 为缩略图设置的宽度决定了这里的窗口大小 */
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  line-height: 32rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+  font-weight: 200;
+}
+
+.list-item-img {
+  box-sizing: content-box;
+  width: 280rpx;
+  height: 198rpx;
+  line-height: 0;
+  background-color: #FFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.active-merchant-border {
+  border-top: 8rpx solid #FF7011;
+}
+

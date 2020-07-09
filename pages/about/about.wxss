@@ -1,0 +1,56 @@
+@import "../../utils/wxParse/wxParse.wxss";
+/* 用于富文本解析 */
+
+.slide{
+  width: 750rpx;
+  height: 500rpx; 
+}
+
+.slide-image{
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.intro-title {
+  position: relative;
+}
+
+.intro-info{
+  background-color: #fff;
+  padding: 0 40rpx;
+}
+
+.guide-logo{
+  /* 为了实现这种效果，肯定是绝对定位 */
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top:35%;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.intro-title-text {
+  padding: 54rpx 0;
+  line-height: 60rpx;
+  font-size: 70rpx;
+  color:#213F99;
+}
+
+.intro-english-text {
+  padding: 10rpx 0;
+  font-size: 40rpx;
+  font-weight: normal;
+  color:#2B2B2B;
+}
+
+.intro-main {
+  padding: 40rpx 0;
+  line-height: 48rpx;
+  /* 行高可以有效控制行距 */
+  font-size: 30rpx;
+  font-weight: 300;
+  color: #464645;
+  text-align: justify;
+  /* 用于文字左右两边的调整对齐 */
+}

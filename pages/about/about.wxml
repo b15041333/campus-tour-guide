@@ -1,0 +1,22 @@
+<import src="../../utils/wxParse/wxParse.wxml"/>
+<!-- 用于富文本解析 -->
+
+<view class="intro">
+    <swiper class="slide" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="true">
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+    </swiper>
+    <image src="/resource/images/daohang.png" class="guide-logo" bindtap="goToMap"></image> 
+    <view class="intro-info">
+        <view class="intro-title">
+          <view class="intro-title-text">{{schoolName}}</view>
+          <view class="intro-english-text">{{englishName}}</view>
+        </view>
+        <view class="intro-main"> 
+          <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+          <!-- 使用wxParse模板 -->
+        </view>
+    </view>
+</view>
